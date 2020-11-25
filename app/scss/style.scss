@@ -1,0 +1,159 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+
+.header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/header-bg.jpg) no-repeat;
+    background-size: cover;
+
+    min-height: 520px;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.header__title {
+    font-size: 72px;
+    line-height: 71px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 15px;
+
+    &::before {
+        content: "";
+        width: 693px;
+        height: 5px;
+        background-color: red;
+        position: absolute;
+        bottom: 0;
+
+    }
+}
+
+.header__text {
+    margin: 30px 0 47px;
+    max-width: 930px;
+}
+
+.advantage {
+    margin-bottom: 84px;
+}
+
+.advantage__title {
+    margin-bottom: 40px;
+}
+
+.advantage__text {
+    text-align: center;
+    font-weight: 300;
+    color: #828282;
+    max-width: 934px;
+    margin: 0 auto;
+}
+
+.advantage__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 34px;
+
+}
+
+.advantage__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+
+    &-num {
+        font-family: 'Helvetica Neue Cyr Bold';
+        font-size: 92px;
+        line-height: 100px;
+        color: $red;
+    }
+
+    &-text {
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+        color: $dark;
+        white-space: pre-line;
+    }
+}
+
+
+.course {}
+
+
+
+.course__title {}
+
+
+.course__inner {
+    display: flex;
+
+}
+
+.course__net {
+    background: $red;
+
+    padding: 30px 50px 0 150px;
+
+    &-logo {
+        font-family: 'Helvetica Neue Cyr Bold';
+        font-size: 72px;
+        line-height: 69px;
+        margin-bottom: 20px;
+    }
+
+    &-title {
+        font-size: 30px;
+        line-height: 30px;
+        position: relative;
+        padding-bottom: 21px;
+
+        &::before {
+            content: "";
+            width: 379px;
+            height: 3px;
+            background-color: #fff;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &-text {
+        margin-top: 30px;
+        text-indent: 20px;
+    }
+
+
+}
+
+.course__net-items {}
+
+.course__net-result {}
+
+.course__net-item {}
+
+.course__candidate {
+    background: #F2F2F2;
+
+    &-title {}
+
+    &-img {}
+}
+
+.course__candidate-demands {}
+
+
+.course__candidate-demand {}
+
+@import "media";
