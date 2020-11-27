@@ -97,7 +97,7 @@
           роботи в
           IT. Навчайся в профіессійній IT компанії та стань частиною індустрії
         </div>
-        <button class="header__btn btn" type="button">
+        <button class="header__btn btn" type="button" onClick="openPopup('#popup')">
           зареєструватись
         </button>
       </div>
@@ -162,6 +162,7 @@
       <h2 class="course__title title">
         Наші курси
       </h2>
+
     </div>
     <div class="course__inner">
       <div class="course__net">
@@ -215,7 +216,7 @@
             - Обов'язково англійська не нижче рівня Intermediate;
           </p>
         </div>
-        <img src="img/course-candidate.png" alt="" class="course__candidate-img">
+        <img class="course__candidate-img" src="img/course-candidate.png" alt="">
 
       </div>
     </div>
@@ -277,7 +278,7 @@
           </p>
         </div>
       </div>
-      <button class="course__reg-btn btn">
+      <button class="course__reg-btn btn" type="button" onClick="openPopup('#popup')">
         ЗАРЕЄСТРУВАТИСЬ
       </button>
     </div>
@@ -468,18 +469,31 @@
     </div>
   </section>
 
-  <div class="popup">
-    <div class="popup__title title">
-      Реєстрація на курси
+
+  <div class="popup" id="popup">
+    <div class="popup__box">
+      <div class="popup__wrap">
+        <div class="popup__title title">
+          Реєстрація на курси
+        </div>
+
+        <span class="popup__close" onClick="closePopup('#popup')"></span>
+
+        <form class="form" name="form" action="" method="post">
+          <input class="form__input form__input--name" class="form__input" name="name" type="text"
+            placeholder="Ваше ім'я" />
+          <input class="form__input form__input--surname" name="surname" type="text" placeholder="Прізвище" />
+          <input class="form__input form__input--email" name="email" type="text" placeholder="Email" />
+          <input class="form__input form__input--phone" name="phone" type="nubmer" placeholder="Номер телефону*" />
+          <input class="form__input form__input--course" name="course" type="text" placeholder="Курс" />
+          <span class="form__descr">З вами зв'яжуться для уточнення деталей.</span>
+          <button class="form__btn btn" type="submit">відправити заявку</button>
+        </form>
+
+      </div>
     </div>
-    <form action="http://mihailmaximov.ru/projects/mail/post.php" method="post" name="form">
-      <input name="name" type="text" placeholder="Ваше имя" />
-      <input name="surname" type="text" placeholder="Ваше имя" />
-      <input name="email" type="text" placeholder="Ваша почта" />
-      <input name="surname" type="nubmer" placeholder="Номер телефона*" />
-      <input name="course" type="text" placeholder="Курс" />
-      <button class="form__btn btn" type="submit">відправити заявку</button>
-    </form>
+
+
 
   </div>
 

@@ -4,8 +4,14 @@ $(function () {
         $(".menu-btn__inner").toggleClass('change');
         $(".nav").toggleClass('change');
         $(".nav__list>li").slideRight();
-
     });
 
-
 });
+
+function openPopup(divPopup) {
+    $(divPopup).fadeIn(250);
+}
+
+function closePopup(divPopup) {
+    $(divPopup).fadeOut(250);
+}
