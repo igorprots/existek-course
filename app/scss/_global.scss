@@ -177,6 +177,8 @@ li {
     }
 }
 
+
+
 .menu-btn {
     width: 40px;
     height: 40px;
@@ -184,6 +186,7 @@ li {
     align-items: center;
     z-index: 1;
     display: none;
+    cursor: pointer;
 }
 
 .menu-btn__line {
@@ -193,6 +196,8 @@ li {
     margin-bottom: 7px;
     transition: 0.4s;
 }
+
+
 
 .change .menu-btn__line--1 {
     transform: rotate(-45deg) translate(-10px, 8px);

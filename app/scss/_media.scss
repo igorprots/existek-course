@@ -22,10 +22,23 @@
         max-width: 195px;
     }
 
+
+    #nav {
+        position: absolute;
+        width: 100vw;
+        text-align: center;
+        top: 0;
+        z-index: 1;
+        margin: 0 -20px;
+
+    }
+
+
     .nav__list {
         display: none;
         background: #000;
         padding: 20px 0;
+        margin-top: 0;
     }
 
     .nav__list>li {
@@ -52,20 +65,10 @@
         display: block;
     }
 
-    #nav {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        text-align: center;
-        bottom: 30px;
-        z-index: 1;
-        margin: 0 -20px;
-
-    }
-
     .title {
         font-size: 24px;
         line-height: 24px;
+        margin: 31px 0 36px;
     }
 
     .header__top {
@@ -97,8 +100,237 @@
         }
     }
 
+
+    .course__inner {
+        flex-direction: column;
+    }
+
+    .course__net {
+        width: 100%;
+        padding: 33px 20px;
+
+        &-logo {
+            font-size: 60px;
+            line-height: 58px;
+            margin-bottom: 6px;
+            padding-left: 22px;
+        }
+
+        &-title {
+            font-size: 24px;
+            line-height: 24px;
+            position: relative;
+            padding-left: 22px;
+            padding-bottom: 30px;
+
+            &::before {
+                width: 100%;
+            }
+        }
+
+        &-text {
+            font-size: 14px;
+            line-height: 26px;
+            margin: 14px 0 20px;
+        }
+
+        &-result {
+            padding-left: 22px;
+            font-size: 24px;
+            max-width: 313px;
+            text-align: left;
+        }
+
+        &-item {
+            margin: 12px 0 12px 20px;
+            padding-left: 0;
+        }
+    }
+
+    .course__candidate {
+        width: 100%;
+
+        &-title {
+            padding: 29px 0 11px 42px;
+            max-width: 100%;
+            font-size: 24px;
+            white-space: normal;
+
+            span {
+                font-size: 24px;
+                line-height: 26px;
+            }
+        }
+
+        &-demands {
+            padding-left: 20px;
+            margin-bottom: 29px;
+        }
+
+        &-demand {
+            font-size: 14px;
+            list-style-image: url(../img/list-type.png);
+            line-height: 21px;
+            margin-bottom: 12px;
+            margin-left: 20px;
+            padding: 0;
+
+            span {
+                display: none;
+            }
+
+
+        }
+    }
+
+    .course__reg {
+        max-width: 100%;
+        max-height: 100%;
+        position: static;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: none;
+        box-shadow: none;
+        padding: 0;
+
+        &-items {
+            flex-direction: column;
+            align-items: center;
+            padding: 36px 9% 0 11%;
+        }
+
+        &-item {
+            flex-direction: row;
+            padding-bottom: 80px;
+            width: 100%;
+            min-width: 178px;
+
+        }
+
+        &-imagebox {
+            padding-right: 24px;
+            margin: 0;
+        }
+
+        &-arrow {
+            transform: rotate(90deg);
+            top: 125%;
+            left: 100%;
+            margin: 0;
+        }
+
+        &-text {
+            white-space: normal;
+            text-align: left;
+            margin: 0;
+        }
+
+        &-btn {
+            margin: -43px auto 0;
+            display: block;
+        }
+    }
+
+
+    .about {
+        margin: 31px 0 27px;
+
+        &-title {
+            margin: 31px 0 36px;
+        }
+
+        &__items {
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            width: 50%;
+            margin-bottom: 34px;
+
+            &:nth-child(4) {
+                order: 1;
+                width: 100%;
+            }
+        }
+    }
+
+    .result {
+        margin-bottom: 66px;
+
+        &__title {
+            margin: 0 0 36px;
+        }
+
+        &__cursor {
+            top: 85px;
+            left: 30px;
+
+        }
+
+        &__item {
+            margin: 0 auto 20px;
+
+            &-img {
+                margin: 0 30px 0 0;
+            }
+
+            &-title {
+                font-size: 18px;
+                line-height: 24px;
+                padding-bottom: 8px;
+            }
+
+            &-text {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 24px;
+            }
+
+        }
+    }
+
+    .instructor {
+        padding: 0;
+
+        &__title {
+            margin: 0 0 19px 0;
+            padding-top: 30px;
+        }
+
+        &__items {
+            padding: 0;
+            flex-direction: column;
+        }
+
+        &__item {
+            margin: 18px auto;
+        }
+    }
+
+    .location {
+        &__gallery {
+            &-photo {
+                width: 50%;
+
+                &:nth-child(1) {
+                    flex-grow: 1;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
 }
 
+
+@media (max-width:375px) {
+    .result {
+        margin-bottom: 36px;
+    }
+
+}
 
 @media (max-height:720px) {
 
