@@ -282,7 +282,7 @@ li {
     }
 
     &:hover {
-        opacity: 0.9;
+        opacity: 0.5;
     }
 }
 
@@ -301,7 +301,7 @@ li {
 
 .form__input {
     border: none;
-    border-bottom: 1px solid $dark;
+    border-bottom: 1px solid #C4C4C4;
     margin-bottom: 30px;
     outline: none;
     outline-offset: 0;
@@ -314,6 +314,13 @@ li {
         line-height: 24px;
         color: #C4C4C4;
         font-family: 'HelveticaNeueCyr';
+    }
+
+    &:focus {
+        border-bottom: 1px solid $dark;
+    }
+    &:valid {
+        border-bottom: 1px solid $dark;
     }
 }
 

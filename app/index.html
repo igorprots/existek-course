@@ -527,10 +527,11 @@
         <form class="form" name="form" action="" method="post">
           <input class="form__input form__input--name" class="form__input" name="name" type="text"
             placeholder="Ваше ім'я" />
-          <input class="form__input form__input--surname" name="surname" type="text" placeholder="Прізвище" />
-          <input class="form__input form__input--email" name="email" type="text" placeholder="Email" />
-          <input class="form__input form__input--phone" name="phone" type="nubmer" placeholder="Номер телефону*" />
-          <input class="form__input form__input--course" name="course" type="text" placeholder="Курс" />
+          <input class="form__input form__input--surname" name="surname" type="text" placeholder="Прізвище" required />
+          <input class="form__input form__input--email" name="email" type="text" placeholder="Email" required />
+          <input class="form__input form__input--phone" name="phone" type="nubmer" placeholder="Номер телефону*"
+            required />
+          <input class="form__input form__input--course" name="course" type="text" placeholder="Курс" required />
           <span class="form__descr">З вами зв'яжуться для уточнення деталей.</span>
           <button class="form__btn btn" type="submit">відправити заявку</button>
         </form>
