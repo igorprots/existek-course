@@ -22,6 +22,10 @@
         max-width: 195px;
     }
 
+    .header__contact {
+        display: flex;
+    }
+
 
     #nav {
         position: absolute;
@@ -344,6 +348,17 @@
 
 
 @media (max-width:374.9px) {
+    .header__mail {
+        .header__link {
+            flex-flow: column;
+            align-items: flex-start;
+        }
+    }
+
+    .header__link {
+        font-size: 12px;
+    }
+
     .result {
         margin-bottom: 36px;
 

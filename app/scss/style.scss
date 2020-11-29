@@ -5,10 +5,43 @@
 
 
 .header {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/header-bg.jpg) no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/header-bg.jpg) no-repeat center;
     background-size: cover;
-
     min-height: 520px;
+
+    &__link {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 16px;
+        padding-bottom: 5px;
+
+        &:hover {
+            color: $red;
+        }
+
+
+        svg {
+            width: 18px;
+            height: 18px;
+            margin-right: 5px;
+        }
+    }
+}
+
+.header__contact {
+    background-color: #232323;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 20px;
+    display: none;
+
+}
+
+.header__phone {
+    display: flex;
+    flex-direction: column;
 }
 
 .header__top {
